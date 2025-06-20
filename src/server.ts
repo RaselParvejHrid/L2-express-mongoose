@@ -1,7 +1,10 @@
 import app from "./app";
+import dotenv from "dotenv";
 import { connectDB } from "./config/db";
 
-const PORT = 8888;
+dotenv.config();
+
+const PORT = parseInt(process.env.PORT as string, 10) || 8888;
 
 async function main() {
   try {
