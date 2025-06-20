@@ -1,5 +1,5 @@
 <h1>Explanatory Video</h1>
-<a href="https://youtu.be/zYAKCbzMw6w">Explanatory Video</a>
+<a href="https://youtu.be/zYAKCbzMw6w" target="_blank">Explanatory Video</a>
 
 <h1>How to run this project locally?</h1>
 With <b>TypeScript</b> installed globally
