@@ -1,3 +1,6 @@
+<a href="https://youtu.be/zYAKCbzMw6w"><h1>Explanatory Video</h1></a>
+
+
 <h1>How to run this project locally?</h1>
 With <b>TypeScript</b> installed globally
 <br/>and a <b>MongoDB</b> Server running at <b>localhost:27017</b>,<br/>
@@ -7,11 +10,9 @@ run the following command at project root to install all the dependencies.<br/>
 npm i
 ```
 
-Then run the following command to run the project.
+Then, execute the following command to run the project.
 ```bash
 npm run dev
 ```
-
-<h1>API Endpoints</h1>
 
 
