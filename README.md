@@ -16,3 +16,13 @@ npm run dev
 ```
 
 
+<h1>Features</h1>
+- Client can register a new book.
+- Client can see all books.
+- Client can get info about an specific book by ID.
+- Client can update an specific book by ID.
+- Client can delete an specific book by ID.
+- Client can request to borrow copies of a book.
+- Client can see summary for all borrowed books.
+
+
