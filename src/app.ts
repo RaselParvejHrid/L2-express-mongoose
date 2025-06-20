@@ -6,7 +6,6 @@ import express, {
 } from "express";
 import booksRouter from "./controllers/books.controller";
 import borrowsRouter from "./controllers/borrows.controller";
-import mongoose from "mongoose";
 
 const app: Application = express();
 
@@ -23,7 +22,7 @@ const errorHandler: ErrorRequestHandler = (err, req, res, next) => {
   let status = err.status ?? 500;
   const message = err.message ?? "Internal Server Error";
 
-  if (err.code === 11000) {
+  if (err.code === 11000 || err.name === "CastError") {
     status = 400;
   }
 
