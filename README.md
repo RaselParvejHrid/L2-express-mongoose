@@ -2,6 +2,7 @@
 With <b>TypeScript</b> installed globally
 <br/>and a <b>MongoDB</b> Server running at <b>localhost:27017</b>,<br/>
 run the following command at project root to install all the dependencies.<br/>
+
 ```bash
 npm i
 ```
