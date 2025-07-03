@@ -26,15 +26,16 @@ booksRouter.get(
   "/",
   async (req: Request, res: Response, next: NextFunction) => {
     try {
-      let limit = req.query.limit ? Number(req.query.limit) : 10;
-      let { filter, sortBy, sort } = req.query;
+      // let limit = req.query.limit ? Number(req.query.limit) : 10;
+      // let { filter, sortBy, sort } = req.query;
 
-      const data = await Book.find({
-        genre: filter ? (filter as string).toUpperCase() : "SCIENCE",
-      })
-        .sort({ [sortBy as string]: sort === "asc" ? 1 : -1 })
-        .limit(limit);
+      // const data = await Book.find({
+      //   genre: filter ? (filter as string).toUpperCase() : "SCIENCE",
+      // })
+      //   .sort({ [sortBy as string]: sort === "asc" ? 1 : -1 })
+      //   .limit(limit);
 
+      const data = await Book.find();
       res
         .status(200)
         .json({ success: true, message: "Books retrieved successfully", data });

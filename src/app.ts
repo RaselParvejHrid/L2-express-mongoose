@@ -4,10 +4,17 @@ import express, {
   Response,
   ErrorRequestHandler,
 } from "express";
+const cors = require("cors");
 import booksRouter from "./controllers/books.controller";
 import borrowsRouter from "./controllers/borrows.controller";
 
 const app: Application = express();
+
+app.use(
+  cors({
+    origin: ["http://localhost:5173", "https://l2-redux.vercel.app"],
+  })
+);
 
 app.use(express.json());
 
